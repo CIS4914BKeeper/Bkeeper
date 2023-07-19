@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+label {
+    color: white;
+}
+.banner {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    padding-left: 15px; /* Add some left padding to the container */
+    height: 180px;
+    margin-top: -50px;
+}
+
+.logo {
+    max-width: 200px; /* Increase the width to make it bigger */
+    max-height: 300px; /* Increase the height to make it a little bit higher */
+    width: auto; /* Allow the image to scale proportionally */
+    height: auto; /* Allow the image to scale proportionally */
+    display: block; /* Remove any extra spacing around the image */
+    
+}
+
+#button-container {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    transform: translateY(-50%);
+    margin-left: 10px;
+  }
+
+
+input[type="text"], input[type="password"] {
+    color: white;
+    background-color: rgb(70, 69, 69);
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: white;
+}
+
+input[type="submit"] {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(70, 69, 69);
+    color: white
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: black;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+.btn-primary {  
+    padding: 15px 30px;
+    margin: 0 auto;
+}
+
+.btn-link {
+    color: white
+}
+
+h2.text-center {
+    color: white;
+}
+
+.text-center.mt-3 {
+  color: white;
+}
+
+#missingFieldsMessage {
+    color: red;
+  }
+
+.thank-you-message {
+    background-color: #007bff;
+    color: white;
+}
