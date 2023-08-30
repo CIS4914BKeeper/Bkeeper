@@ -23,6 +23,13 @@
         <form id="loginForm">
           <div class="mb-3">
             <h2 class="text-center mb-4">Log in to BKeeper</h2>
+            
+            <label for="schoolInput" class="form-label">School</label>
+            <input type="text" class="form-control" id="schoolInput" list="schools" placeholder="Enter or select a school">
+            <datalist id="schools">
+            <!-- Options will be loaded dynamically using JavaScript -->
+            </datalist>
+
             <label for="username" class="form-label">Username</label>
             <input type="text" class="form-control" id="username" placeholder="Enter your username">
           </div>
@@ -39,6 +46,11 @@
     </div>
   </div>
 
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2023 BKeeper. All rights reserved.</p>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="script.js">
   </script>
