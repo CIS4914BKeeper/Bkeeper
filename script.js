@@ -148,6 +148,20 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  const buttons = document.querySelectorAll('.btn[data-class]');
+
+  buttons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+      const className = button.getAttribute('data-class');
+      button.innerText = `Period ${button.getAttribute('data-period')}: ${className}`;
+    });
+
+    button.addEventListener('mouseout', () => {
+      button.innerText = `Period ${button.getAttribute('data-period')}`;
+    });
+  });
+
 });
 
 function requestDemo() {

@@ -54,7 +54,7 @@ html {
   input[type="text"],
   input[type="password"] {
     color: white;
-    background-color: rgb(70, 69, 69);
+    background-color: #464545;
     border: none;
     padding: 10px;
     margin-bottom: 10px;
@@ -131,8 +131,10 @@ html {
   #calendar {
     background-color: #8f8e8e;
     border-radius: 10px; /* Adding round border */
+    height: 250px;
   }
   
+
   #calendar .fc-day-today {
     background-color: #656464; /* Changing shade of today to dark gray */
   }
@@ -164,3 +166,8 @@ html {
     margin-top: 20px; /* Add margin to separate from the search bar */
   }
   
+/* Style for the outer notification box */
+.notification-box {
+  border-radius: 10px;
+  color: white;
+}
