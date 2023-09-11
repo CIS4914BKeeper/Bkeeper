@@ -22,8 +22,8 @@ html {
   .banner {
     display: flex;
     justify-content: flex-start; /* Align items to the left */
-    padding-left: 15px; /* Add some left padding to the container */
-    height: 180px;
+    padding-left: 10; /* Add some left padding to the container */
+    height: 250px;
     margin-top: -50px;
   }
   /*Logo */
@@ -38,8 +38,9 @@ html {
   /*User logo */
   
   .user-logo {
-      max-width: 40px; /* Set the maximum width to control the size */
+      max-width: 20px; /* Set the maximum width to control the size */
       height: auto; /* Allow the height to adjust proportionally */
+  
   }
   
   
@@ -130,13 +131,14 @@ html {
   /*Calendar style */
   #calendar {
     background-color: #8f8e8e;
-    border-radius: 10px; /* Adding round border */
+    border-radius: 15px; /* Adding round border */
     height: 250px;
+
   }
   
 
   #calendar .fc-day-today {
-    background-color: #656464; /* Changing shade of today to dark gray */
+    background-color: #a8a6a6; /* Changing shade of today to dark gray */
   }
   
   /* Style for the search bar and button */
@@ -159,8 +161,18 @@ html {
   
   /*Graph */
   
-  .graph-container {
-    background-color: #8f8e8e; /* Background color of the calendar */
+  .graph-container 
+  {
+    background-color: #d3cfcf; /* Background color of the calendar */
+    border-radius: 10px;
+    padding: 20px; /* Add some padding for spacing */
+    margin-top: 20px; /* Add margin to separate from the search bar */
+  }
+ 
+  /*Classes or Departments container*/
+  .classDept-container 
+  {
+    background-color: #d3cfcf; /* Background color of the calendar */
     border-radius: 10px;
     padding: 20px; /* Add some padding for spacing */
     margin-top: 20px; /* Add margin to separate from the search bar */
@@ -171,3 +183,4 @@ html {
   border-radius: 10px;
   color: white;
 }
+
