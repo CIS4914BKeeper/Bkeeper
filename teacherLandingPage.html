@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </head>
+  </head> 
 
   <body>
     <!-- Common Banner and Logo, check ref -->
     <div class="banner bg-black py-1">
-      <div class="container d-flex align-items-start justify-content-between">
+      <div class="container d-flex align-items-center justify-content-between">
         <a href="index.html">
           <img src="logo.png" alt="Logo" class="logo" />
         </a>
+        
         <div class="user-menu">
           <!-- User Logo with Dropdown Menu -->
           <div class="dropdown">
@@ -47,38 +48,74 @@
     </div>
 
     <div class="container mt-4">
+        <p ><h2>Welcome to your Teacher's account!</h2></p>
+
       <div class="row">
         <!-- Left Section: Chart with Slots and Calendar -->
 
         <div class="col-md-6">
+
+          <div class="classDept-container">
           <div class="chart-with-slots">
-            <h3>Classes/Departments</h3>
-            <div class="row">
-              <div class="col-md-4 mb-2">
-                <button class="btn btn-secondary w-100">Math</button>
-              </div>
-              <div class="col-md-4 mb-2">
-                <button class="btn btn-secondary w-100">Science</button>
-              </div>
-              <div class="col-md-4 mb-2">
-                <button class="btn btn-secondary w-100">History</button>
-              </div>
-              <div class="col-md-4 mb-2">
-                <button class="btn btn-secondary w-100">English</button>
-              </div>
-              <div class="col-md-4 mb-2">
-                <button class="btn btn-secondary w-100">Art</button>
-              </div>
-              <div class="col-md-4 mb-2">
-                <button class="btn btn-secondary w-100">Music</button>
-              </div>
-              <div class="col-md-4 mb-2">
-                <button class="btn btn-secondary w-100">
-                  Physical Education
-                </button>
-              </div>
-            </div>
+        
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Classe Standing/Performance</title>
+                <style>
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        border: 2px solid #0a0a0a;
+                    
+                    }
+                    
+                    th, td {
+                        border: 2px solid #0a0a0a;
+                        padding: 8px;
+                        text-align: center;
+                
+                    }
+                    
+                    th {
+                        background-color: #596288;
+                    }
+                </style>
+            </head>
+            <body>
+                <h3>Classe Standing/Performance</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Grades</th>
+                            <th>Attendance</th>
+                            <th>Bmetric</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345</td>
+                            <td>90</td>
+                            <td>100</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>67890</td>
+                            <td>75</td>
+                            <td>78</td>
+                            <td>70</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </body>
+            </html>
+            
           </div>
+        </div>
 
           <div class="graph-container">
             <div class="graph">
@@ -95,7 +132,7 @@
               <button class="btn btn-primary" id="searchButton">Search</button>
             </div>
           </div>
-
+          <!--calendar-->
           <div id="calendar"></div>
 
           <button class="btn btn-primary mt-2">Add New Metric</button>

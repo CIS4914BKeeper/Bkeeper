@@ -13,15 +13,17 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </head>
+  </head> 
 
   <body>
     <!-- Common Banner and Logo, check ref -->
     <div class="banner bg-black py-1">
-      <div class="container d-flex align-items-start justify-content-between">
+      <div class="container d-flex align-items-center justify-content-between">
         <a href="index.html">
           <img src="logo.png" alt="Logo" class="logo" />
         </a>
+        <p><h2> Welcometo your admin's account </h2></p>
+        
         <div class="user-menu">
           <!-- User Logo with Dropdown Menu -->
           <div class="dropdown">
@@ -51,6 +53,8 @@
         <!-- Left Section: Chart with Slots and Calendar -->
 
         <div class="col-md-6">
+
+          <div class="classDept-container">
           <div class="chart-with-slots">
             <h3>Classes/Departments</h3>
             <div class="row">
@@ -79,6 +83,7 @@
               </div>
             </div>
           </div>
+        </div>
 
           <div class="graph-container">
             <div class="graph">
@@ -95,7 +100,7 @@
               <button class="btn btn-primary" id="searchButton">Search</button>
             </div>
           </div>
-
+          <!--calendar-->
           <div id="calendar"></div>
 
           <button class="btn btn-primary mt-2">Add New Metric</button>
