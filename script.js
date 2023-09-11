@@ -18,7 +18,6 @@ backButton.addEventListener('click', function() {
     goback(); // Call the goBack function to handle the back button behavior
 });
 
-    
 
 function showThankYouMessage() {
     var thankYouContainer = document.getElementById('thankYouContainer');
@@ -149,4 +148,25 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  const buttons = document.querySelectorAll('.btn[data-class]');
+
+  buttons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+      const className = button.getAttribute('data-class');
+      button.innerText = `Period ${button.getAttribute('data-period')}: ${className}`;
+    });
+
+    button.addEventListener('mouseout', () => {
+      button.innerText = `Period ${button.getAttribute('data-period')}`;
+    });
+  });
+
 });
+
+function requestDemo() {
+  const subject = encodeURIComponent("Demo Request");
+  const body = encodeURIComponent("Hello, I am [Name], I would like to request a demo of the product. The best way to contact me is [include contact information]");
+  const mailtoLink = `mailto:bkeeper4914@outlook.com?subject=${subject}&body=${body}`;
+  window.location.href = mailtoLink;
+}   

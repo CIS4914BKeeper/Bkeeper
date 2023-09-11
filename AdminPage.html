@@ -52,7 +52,7 @@
 
         <div class="col-md-6">
           <div class="chart-with-slots">
-            <h3>Classes/Departments</h3>
+            <h3>Departments</h3>
             <div class="row">
               <div class="col-md-4 mb-2">
                 <button class="btn btn-secondary w-100">Math</button>
@@ -80,25 +80,36 @@
             </div>
           </div>
 
-          <div class="graph-container">
-            <div class="graph">
-              <canvas id="myChart"></canvas>
-            </div>
+          <div> 
+            <h3>Calendar</h3>
+            <div id="calendar"></div> 
           </div>
         </div>
 
         <!-- Right Section: Graph, Search Bar, and Add New Metric Button -->
         <div class="col-md-6">
-          <div class="search-bar">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control search-input" />
-              <button class="btn btn-primary" id="searchButton">Search</button>
+
+            <div class="search-bar">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control search-input" />
+                  <button class="btn btn-primary" id="searchButton">Search</button>
+                </div>
+              </div>
+
+            <h3>Notifications</h3>
+            <div class="notification-box bg-secondary p-3"> 
+                  <!-- Notification content goes here -->
+                  <p>This is a notification.</p>
+              </div>
+            
+              <h3>Graph</h3> 
+            <div class="graph-container">
+                <div class="graph">
+              <canvas id="myChart"></canvas>
+                </div>
             </div>
-          </div>
-
-          <div id="calendar"></div>
-
-          <button class="btn btn-primary mt-2">Add New Metric</button>
+            
+            <button class="btn btn-primary mt-2">Add New Metric</button>
         </div>
       </div>
     </div>
