@@ -1,0 +1,17 @@
+extends baseEmail
+
+block content
+  p Hi #{user.name},
+  p Welcome to Bkeeper,
+  p Please setup your password.
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') Setup your password
+  p If you need any help with setting your password, please don't hesitate to contact us!
+  p - Bkeeper, Admin

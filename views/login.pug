@@ -1,0 +1,23 @@
+extends index
+
+block content
+  .container
+    .row.justify-content-center
+      .col-lg-4.col-md-6.col-sm-8
+        form#loginForm
+          .mb-3
+            h2.text-center.mb-4 Log in to BKeeper
+            label.form-label(for='username') Username
+            input#username.form-control(type='text' placeholder='Enter your username')
+          .mb-3
+            label.form-label(for='password') Password
+            input#password.form-control(type='password' placeholder='Enter your password')
+          button.btn.btn-primary.w-100.mx-auto(type='submit')
+            | Log In
+          button.btn.btn-link.w-100.mx-auto(type='button')
+            | Forgot Password?
+          p.text-center.mt-3 Don&apos;t have an account yet?
+          a(href='/signup')
+            button#requestAccountBtn.btn.btn-primary.w-100.mx-auto(type='button')
+              | Request Account
+    //- script(src='/js/login.js')

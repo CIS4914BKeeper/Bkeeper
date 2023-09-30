@@ -1,0 +1,21 @@
+extends baseEmail
+
+block content
+  p Hi Bkeeper admin,
+    p Please review the user information.
+    p Name: #{user.name}
+    p Email: #{user.email}
+    p Phone Number: #{user.phoneNumber}
+    table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+      tbody
+        tr
+          td(align='left')
+            table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+              tbody
+                tr
+                  td
+                    a(href=`${url}/approved`, target='_blank' class='approve') Approve
+                  td
+                    a(href=`${url}/rejected`, target='_blank' class='reject') Reject
+  p If the user information correct, please Arppove. Otherwise, reject the request.
+  p - Bkeeper
