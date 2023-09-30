@@ -1,0 +1,188 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  label {
+    color: white;
+  }
+  
+  /*Footer*/
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-top: 4%;
+    position: absolute;
+    width: 100%;
+  }
+
+  /*Banner */
+  .banner {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    padding-left: 15px; /* Add some left padding to the container */
+    height: 180px;
+    margin-top: -50px;
+  }
+  /*Logo */
+  .logo {
+    max-width: 200px; /* Increase the width to make it bigger */
+    max-height: 300px; /* Increase the height to make it a little bit higher */
+    width: auto; /* Allow the image to scale proportionally */
+    height: auto; /* Allow the image to scale proportionally */
+    display: block; /* Remove any extra spacing around the image */
+  }
+  
+  /*User logo */
+  
+  .user-logo {
+      max-width: 40px; /* Set the maximum width to control the size */
+      height: auto; /* Allow the height to adjust proportionally */
+  }
+  
+  
+  #button-container {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    transform: translateY(-50%);
+    margin-left: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    color: white;
+    background-color: rgb(70, 69, 69);
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: white;
+  }
+  
+  input[type="submit"] {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  body {
+    background-color: #464545;
+    color: white;
+    
+  }
+  
+  .container {
+    margin-top: 100px;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    background-color: black;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-input {
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    padding: 15px 30px;
+    margin: 0 auto;
+  }
+  
+  .btn-link {
+    color: white;
+  }
+  
+  h2.text-center {
+    color: white;
+  }
+  
+  .text-center.mt-3 {
+    color: white;
+  }
+  
+  #missingFieldsMessage {
+    color: red;
+  }
+  
+  .thank-you-message {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /*Calendar style */
+  #calendar {
+    background-color: #8f8e8e;
+    border-radius: 10px; /* Adding round border */
+  }
+  
+  #calendar .fc-day-today {
+    background-color: #656464; /* Changing shade of today to dark gray */
+  }
+  
+  /* Style for the search bar and button */
+  .input-group {
+    width: 100%; /* Ensure the input group takes up the full width */
+  }
+  
+  .search-input {
+    background-color: white !important;
+    border-radius: 8px; /* Apply border radius to match the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0.8rem; /* Adjust padding to make the bar slightly narrower */
+  }
+  
+  #searchButton {
+    border-radius: 8px;
+    padding: 0.2rem 0.8rem; /* Adjust padding to match the bar */
+    margin-top: -5px;
+  }
+  
+  /*Graph */
+  
+  .graph-container {
+    background-color: #8f8e8e; /* Background color of the calendar */
+    border-radius: 10px;
+    padding: 20px; /* Add some padding for spacing */
+    margin-top: 20px; /* Add margin to separate from the search bar */
+  }
+  
+.alert {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9999;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1.6rem 1.5rem;
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+.alert--success {
+    background-color: #20bf6b;
+}
+.alert--error {
+    background-color: #eb4d4b;
+}
