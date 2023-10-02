@@ -1,0 +1,37 @@
+extends index
+
+block content
+  .container.mt-4
+    .row
+      // Left Section: Chart with Slots and Calendar
+      .col-md-6
+        .chart-with-slots
+          h3 Classes/Departments
+          .row
+            .col-md-4.mb-2
+              button.btn.btn-secondary.w-100 Math
+            .col-md-4.mb-2
+              button.btn.btn-secondary.w-100 Science
+            .col-md-4.mb-2
+              button.btn.btn-secondary.w-100 History
+            .col-md-4.mb-2
+              button.btn.btn-secondary.w-100 English
+            .col-md-4.mb-2
+              button.btn.btn-secondary.w-100 Art
+            .col-md-4.mb-2
+              button.btn.btn-secondary.w-100 Music
+            .col-md-4.mb-2
+              button.btn.btn-secondary.w-100
+                | Physical Education
+        .graph-container
+          .graph
+            canvas#myChart
+      // Right Section: Graph, Search Bar, and Add New Metric Button
+      .col-md-6
+        .search-bar
+          .input-group.mb-3
+            input.form-control.search-input(type='text')
+            button#searchButton.btn.btn-primary Search
+        #calendar
+        button.btn.btn-primary.mt-2 Add New Metric
+  
