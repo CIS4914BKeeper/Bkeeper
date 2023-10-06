@@ -69,6 +69,7 @@ exports.signupRequest = catchAsync(async (req, res, next) => {
     studentId: req.body.studentId,
     name: req.body.name,
     phoneNumber: req.body.phoneNumber,
+    role: req.body.role,
   });
 
   // await newUser.save({ validateBeforeSave: false });
@@ -307,3 +308,15 @@ exports.resetPassword = catchAsync(async (req, res, next) => {
     token,
   });
 });
+
+exports.restrictTo = (...roles) => {
+  return (req, res, next) => {
+    if (!roles.includes(req.user.role)) {
+      return next(
+        new AppError('You do not have permission', 403),
+      );
+    }
+
+    next();
+  };
+};

@@ -1,0 +1,40 @@
+.container.mt-4
+  .row
+    // Left Section: Chart with Slots and Calendar
+    .col-md-6
+      .chart-with-slots
+        h3 Departments
+        .row
+          .col-md-4.mb-2
+            button.btn.btn-secondary.w-100 Math
+          .col-md-4.mb-2
+            button.btn.btn-secondary.w-100 Science
+          .col-md-4.mb-2
+            button.btn.btn-secondary.w-100 History
+          .col-md-4.mb-2
+            button.btn.btn-secondary.w-100 English
+          .col-md-4.mb-2
+            button.btn.btn-secondary.w-100 Art
+          .col-md-4.mb-2
+            button.btn.btn-secondary.w-100 Music
+          .col-md-4.mb-2
+            button.btn.btn-secondary.w-100
+              | Physical Education
+      div
+        h3 Calendar
+        #calendar
+    // Right Section: Graph, Search Bar, and Add New Metric Button
+    .col-md-6
+      .search-bar
+        .input-group.mb-3
+          input.form-control.search-input(type='text')
+          button#searchButton.btn.btn-primary Search
+      h3 Notifications
+      .notification-box.bg-secondary.p-3
+        // Notification content goes here
+        p This is a notification.
+      h3 Graph
+      .graph-container
+        .graph
+          canvas#myChart
+      button.btn.btn-primary.mt-2 Add New Metric

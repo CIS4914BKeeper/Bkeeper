@@ -1,0 +1,36 @@
+.container.mt-4
+  .row
+    // Left Section: Chart with Slots and Calendar
+    .col-md-6
+      .chart-with-slots
+        h3 Classes
+        .row
+          .col-md-12.mb-2
+            button.btn.btn-secondary.w-100(data-period='1' data-class='Math') Period 1
+          .col-md-12.mb-2
+            button.btn.btn-secondary.w-100(data-period='2' data-class='Science') Period 2
+          .col-md-12.mb-2
+            button.btn.btn-secondary.w-100(data-period='3' data-class='History') Period 3
+          .col-md-12.mb-2
+            button.btn.btn-secondary.w-100(data-period='4' data-class='English') Period 4
+          .col-md-12.mb-2
+            button.btn.btn-secondary.w-100(data-period='5' data-class='Lunch') Period 5
+          .col-md-12.mb-2
+            button.btn.btn-secondary.w-100(data-period='6' data-class='Physical Education') Period 6
+          .col-md-12.mb-2
+            button.btn.btn-secondary.w-100(data-period='7' data-class='Art') Period 7
+          .col-md-12.mb-2
+            button.btn.btn-secondary.w-100(data-period='8' data-class='Music') Out of Class
+      div
+        h3 Calendar
+        #calendar
+    // Right Section: Graph
+    .col-md-6
+      h3 Notifications
+      .notification-box.bg-secondary.p-3
+        // Notification content goes here
+        p This is a notification.
+      h3 Graph
+      .graph-container
+        .graph
+          canvas#myChart
