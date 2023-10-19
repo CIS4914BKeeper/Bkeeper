@@ -26,7 +26,7 @@ $ cd BKeeper
 download nodejs here: https://nodejs.org/en/download/current
 $ npm install
 $ npm start
-$ After this type http://localhost:3000/ on your browser
+$ After this, type http://127.0.0.1:3000/ on your browser
 $ To stop the server do control C
 ```
 
