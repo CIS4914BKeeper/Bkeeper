@@ -187,5 +187,41 @@ html {
     background-color: #eb4d4b;
 }
 
+/*Graph */
+  
+.graph-container 
+{
+  background-color: #d3cfcf; /* Background color of the calendar */
+  border-radius: 10px;
+  padding: 20px; /* Add some padding for spacing */
+  margin-top: 20px; /* Add margin to separate from the search bar */
+}
 
+/*Classes or Departments container*/
+.classDept-container 
+{
+  background-color: #d3cfcf; /* Background color of the calendar */
+  border-radius: 10px;
+  padding: 20px; /* Add some padding for spacing */
+  margin-top: 20px; /* Add margin to separate from the search bar */
+}
+
+/* Style for the outer notification box */
+.notification-box {
+border-radius: 10px;
+color: white;
+}
+
+ /*Calendar style */
+ #calendar {
+  background-color: #8f8e8e;
+  border-radius: 15px; /* Adding round border */
+  height: 250px;
+
+}
+
+
+#calendar .fc-day-today {
+  background-color: #a8a6a6; /* Changing shade of today to dark gray */
+}
 
