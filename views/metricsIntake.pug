@@ -1,0 +1,21 @@
+
+.container
+  .row.justify-content-center
+    .col-lg-4.col-md-6.col-sm-8
+      form#studentInfoForm(action='process_form.php' method='post')
+        a(href='/')
+          .text-start.mb-3
+            button#backButton.btn.btn-link(type='button')
+              | &larr; Back
+        h2.text-center.mb-4 Student Information Form
+        .mb-3
+          label.form-label(for='student_id') Student ID
+          input#student_id.form-control(type='text' name='student_id' required)
+        .mb-3
+          label.form-label(for='student_name') Student Name
+          input#student_name.form-control(type='text' name='student_name' required)
+        .mb-3
+          label.form-label(for='bgrade') BGrade
+          input#bgrade.form-control(type='text' name='bgrade' required)
+        .mb-3
+          input#submitButton.form-control(type='submit' value='Submit')
