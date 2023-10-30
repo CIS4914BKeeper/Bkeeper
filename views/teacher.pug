@@ -1,9 +1,11 @@
 
+block content
 .container.mt-4
   .row
     // Left Section: Chart with Slots and Calendar
     .col-md-6
       .chart-with-slots
+      h2 Teacher's Page
         h3 Classes
         .row
           .col-md-12.mb-2
@@ -39,6 +41,7 @@
       .graph-container
         .graph
           canvas#myChart
-      a(href='views/metricsIntake.pug')
-        button.btn.btn-primary.mt-2 Add New Metric
-
+      
+      a(href='/metricsIntake')
+        button#loginPageBtn.btn.btn-primary.mx-2(type='button')
+         | Enter new metrics

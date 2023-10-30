@@ -36,3 +36,8 @@ exports.getDashboard = (req, res) => {
     title: 'Dashboard',
   })
 }
+
+// Metrics intake
+exports.metricsIntake = (req, res) => {
+  res.render('metricsIntake'); 
+};

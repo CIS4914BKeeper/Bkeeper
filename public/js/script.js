@@ -92,6 +92,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var requestAccountBtn = document.getElementById('requestAccountBtn');
     var loginPageBtn = document.getElementById('loginPageBtn');
 
+  
+
     requestAccountBtn.addEventListener('click', function () {
       window.location.href = '/signup'; // Redirect to signup.html
     });
@@ -99,4 +101,5 @@ document.addEventListener('DOMContentLoaded', function () {
     loginPageBtn.addEventListener('click', function () {
       window.location.href = '/login'; // Redirect to login.html
     });
-  });
+  })});
+
