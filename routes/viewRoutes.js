@@ -12,6 +12,6 @@ router.get('/', authController.isLoggedIn, viewController.getOverview);
 
 router.get('/dashboard', authController.protect, viewController.getDashboard)
 
-router.get('/metricsIntake', viewController.metricsIntake);
+router.get('/metricsIntake', authController.protect, viewController.metricsIntake);
 
 module.exports = router;
