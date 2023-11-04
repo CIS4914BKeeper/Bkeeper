@@ -320,3 +320,20 @@ exports.restrictTo = (...roles) => {
     next();
   };
 };
+
+exports.metricsIntake = catchAsync(async (req, res, next) => {
+  const newMetric = await Metrics.create({
+    studentID: req.body.studentID,
+    studentName: req.body.studentName,
+    infractionType: req.body.infractionType,
+    Bgrade: req.body.Bgrade,
+    description: req.body.description,
+  });
+
+  await newMetric.save();
+  res.status(200).json({
+    status: 'success',
+    data: newMetric,
+  });
+
+});

@@ -24,6 +24,7 @@ router.delete('/deleteMe', authController.protect, userController.deleteMe);
 router.use(authController.restrictTo('admin'));
 
 router.get('/metricsIntake', viewController.metricsIntake);
+router.post('/metricsIntake', authController.metricsIntake);
 
 router
   .route('/')
