@@ -4,10 +4,33 @@ import { setPassword } from './setPassword';
 import { login } from './login';
 import { logout } from './login';
 
+import { metricIntake } from './metrics';
+
 const loginForm = document.querySelector('#loginForm');
 const passwordForm = document.querySelector('#passwordForm');
 const signupRequestForm = document.querySelector('#requestForm');
 const logOutBtn = document.querySelector('.logout');
+
+const metricIntakeForm = document.querySelector('#studentInfoForm');
+
+if (metricIntakeForm) {
+  metricIntakeForm.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const studentID = document.getElementById('student_id').value;
+    const studentName = document.getElementById('student_name').value;
+    const infractionType = document.getElementById('infType').value;
+    const Bgrade = document.getElementById('bgrade').value;
+    const description = document.getElementById('Description').value;
+
+
+    const metrics = { studentID, studentName, infractionType, Bgrade, description };
+    // console.log(metrics);
+
+    metricIntake(metrics);
+  });
+
+}
 
 if (signupRequestForm) {
   signupRequestForm.addEventListener('submit', e => {
@@ -22,7 +45,7 @@ if (signupRequestForm) {
 
 
     const newUser = { school, email, studentId, name, phoneNumber, classes };
-    console.log(newUser);
+    // console.log(newUser);
 
     signupRequest(newUser);
   });
@@ -48,3 +71,5 @@ if (loginForm)
   });
 
 if (logOutBtn) logOutBtn.addEventListener('click', logout);
+
+

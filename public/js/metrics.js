@@ -1,18 +1,20 @@
 import axios from "axios";
 import { showAlert } from "./alerts";
 
-export const signupRequest = async (user) => {
+export const metricIntake = async (metrics) => {
   try {
     const res = await axios({
       method: 'POST',
-      url: `http://127.0.0.1:3000/api/v1/users/signupRequest`,
+      url: `http://127.0.0.1:3000/api/v1/users/metricsIntake`,
       data: metrics,
     });
 
     if (res.data.status === 'success') {
-      showAlert('success', 'Data sent successfully.');
+      showAlert('success', 'Metric saved successfully.');
       window.setTimeout(() => {
-        location.assign('/dashboard');
+
+        // Route other page if you want
+        location.assign('/metricsIntake');
       }, 1500);
     }
   } catch (err) {
