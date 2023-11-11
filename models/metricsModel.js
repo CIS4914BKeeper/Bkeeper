@@ -5,7 +5,6 @@ const metricSchema = new mongoose.Schema({
   studentID: {
     type: String, // or Number if student IDs are numeric
     required: true,
-    unique: true,
   },
   studentName: {
     type: String,
