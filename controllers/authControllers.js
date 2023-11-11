@@ -328,6 +328,7 @@ exports.metricsIntake = catchAsync(async (req, res, next) => {
     studentName: req.body.studentName,
     infractionType: req.body.infractionType,
     Bgrade: req.body.Bgrade,
+    classID: req.body.classID,
     description: req.body.description,
   });
 

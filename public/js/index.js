@@ -21,10 +21,10 @@ if (metricIntakeForm) {
     const studentName = document.getElementById('student_name').value;
     const infractionType = document.getElementById('infType').value;
     const Bgrade = document.getElementById('bgrade').value;
+    const classID = document.getElementById('classID').value;
     const description = document.getElementById('Description').value;
 
-
-    const metrics = { studentID, studentName, infractionType, Bgrade, description };
+    const metrics = { studentID, studentName, infractionType, Bgrade, classID, description };
     // console.log(metrics);
 
     metricIntake(metrics);

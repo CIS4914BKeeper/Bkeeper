@@ -12197,6 +12197,7 @@ var metricIntake = /*#__PURE__*/function () {
           if (res.data.status === 'success') {
             (0, _alerts.showAlert)('success', 'Metric saved successfully.');
             window.setTimeout(function () {
+              // Route other page if you want
               location.assign('/metricsIntake');
             }, 1500);
           }
@@ -12366,15 +12367,18 @@ if (metricIntakeForm) {
     var studentName = document.getElementById('student_name').value;
     var infractionType = document.getElementById('infType').value;
     var Bgrade = document.getElementById('bgrade').value;
+    var classID = document.getElementById('classID').value;
     var description = document.getElementById('Description').value;
     var metrics = {
       studentID: studentID,
       studentName: studentName,
       infractionType: infractionType,
       Bgrade: Bgrade,
+      classID: classID,
       description: description
     };
-    console.log(metrics);
+    // console.log(metrics);
+
     (0, _metrics.metricIntake)(metrics);
   });
 }
@@ -12397,7 +12401,8 @@ if (signupRequestForm) {
       phoneNumber: phoneNumber,
       classes: classes
     };
-    console.log(newUser);
+    // console.log(newUser);
+
     (0, _signupRequest.signupRequest)(newUser);
   });
 }
@@ -12443,7 +12448,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50392" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55128" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
