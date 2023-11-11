@@ -17,11 +17,29 @@ block content
             label.form-label(for='student_name') Student Name
             input#student_name.form-control(type='text' name='student_name' required)
           .mb-3
-            label.form-label(for='infType') Infraction Type 
-            input#infType.form-control(type='text' name='infType' required)
+            label.form-label(for='infType') Infraction Type
+            select#infType.form-control(name='infType' required='')
+              option(value='' selected='' disabled='') Select an option
+              option(value='Late') Late
+              option(value='Skipping') Skipping
+              option(value='Disturbance') Disturbance
+              option(value='Distracted') Distracted
+              option(value='Misbehaving') Misbehaving
+              option(value='Other') Other
           .mb-3
             label.form-label(for='bgrade') BGrade
-            input#bgrade.form-control(type='text' name='bgrade' required)
+            select#bgrade.form-control(name='bgrade' required='')
+              option(value='' selected='' disabled='' ) Select an option
+              option(value='1') 1 
+              option(value='2') 2 
+              option(value='3') 3 
+              option(value='4') 4 
+              option(value='5') 5 
+              option(value='6') 6 
+              option(value='7') 7 
+              option(value='8') 8 
+              option(value='9') 9 
+              option(value='10') 10 
           .mb-3
             label.form-label(for='classID') Class ID
             input#classID.form-control(type='text' name='classID' required)

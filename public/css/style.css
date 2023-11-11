@@ -70,7 +70,25 @@ html {
     padding: 10px 20px;
     cursor: pointer;
   }
+  select{
+    color:#464545;
+    background-color: #464545;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
   
+  #infType option[disabled] {
+    color: #464545;
+    background-color: #464545;
+  }
+  #infType option[disabled]::placeholder{
+    color: #464545;
+  }
+  .placeholder-option {
+    color: #464545;
+  }
+
   body {
     background-color: #464545;
     color: white;
