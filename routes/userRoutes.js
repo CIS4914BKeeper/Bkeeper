@@ -21,7 +21,7 @@ router.post('/resetPassowrd/:token', authController.resetPassword);
 router.patch('/updateMe', authController.protect, userController.updateMe);
 router.delete('/deleteMe', authController.protect, userController.deleteMe);
 
-router.use(authController.restrictTo('admin'));
+router.use(authController.restrictTo('admin', 'teacher'));
 
 router.get('/metricsIntake', viewController.metricsIntake);
 router.post('/metricsIntake', authController.metricsIntake);
