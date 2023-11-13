@@ -1,4 +1,6 @@
 const catchAsync = require('../utils/catchAsync');
+const User = require('../models/userModel');
+const Metric = require('../models/metricsModel');
 
 exports.getOverview = (req, res) => {
   res.status(200).render('overview', {
@@ -31,7 +33,7 @@ exports.getApprove = (req, res) => {
   });
 }
 
-exports.getDashboard = (req, res) => {
+exports.getDashboard = async (req, res) => {
   res.status(200).render('dashboard', {
     title: 'Dashboard',
   })
@@ -39,5 +41,33 @@ exports.getDashboard = (req, res) => {
 
 // Metrics intake
 exports.metricsIntake = (req, res) => {
-  res.render('metricsIntake'); 
+  res.render('metricsIntake');
 };
+
+exports.getMetricData = async (req, res) => {
+  const user = await User.findById(req.user.id);
+  const classNames = user.class;
+
+  const data = {}
+
+  classNames.forEach(e => {
+    data[e] = 0;
+  })
+
+  try {
+    // Query metrics and increment counts based on the class
+    const metrics = await Metric.find({ studentID: { $in: user.studentId } });
+
+    metrics.forEach(metric => {
+      const className = metric.classID;
+      data[className] += 1; // Increment the count for the class
+    });
+  } catch (error) {
+    console.error('Error querying metrics:', error);
+  }
+
+  res.status(200).json({
+    status: 'success',
+    data
+  })
+}

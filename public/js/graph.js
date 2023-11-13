@@ -1,52 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Mock data for the graph
-    var data = {
-      labels: [
-        "Math",
-        "Science",
-        "History",
-        "English",
-        "Art",
-        "Music",
-        "Physical Education",
-      ],
-      datasets: [
-        {
-          label: "Number of Students",
-          data: [20, 30, 15, 25, 10, 8, 12],
-          backgroundColor: "rgba(54, 162, 235, 0.6)", // Blue color
-          borderColor: "rgba(54, 162, 235, 1)",
-          borderWidth: 1,
-        },
-      ],
-    };
-  
-    // Get the canvas element
-    var ctx = document.getElementById("myChart").getContext("2d");
-  
-    // Create the bar chart
-    var myChart = new Chart(ctx, {
-      type: "bar",
-      data: data,
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-        },
-      },
-    });
-    const buttons = document.querySelectorAll('.btn[data-class]');
+// import axios from 'axios';
 
-    buttons.forEach(button => {
-      button.addEventListener('mouseover', () => {
-        const className = button.getAttribute('data-class');
-        button.innerText = `Period ${button.getAttribute('data-period')}: ${className}`;
-      });
-  
-      button.addEventListener('mouseout', () => {
-        button.innerText = `Period ${button.getAttribute('data-period')}`;
-      });
-    });
-  
-});
+// export const getUser = async () => {
+//   try {
+//     const res = await axios({
+//       method: 'GET',
+//       url: `http://127.0.0.1:3000/api/v1/users/${}`,
+//     });
+
+//     if (res.data.status === 'success') {
+//       showAlert('success', 'Logged in successfully!');
+//       window.setTimeout(() => {
+//         location.assign('/dashboard');
+//       }, 2000);
+//     }
+//   } catch (err) {
+//     showAlert('error', err.response.data.message);
+//   }
+// }
