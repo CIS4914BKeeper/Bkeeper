@@ -88,7 +88,7 @@ if (graphform) {
       labels: classes,
       datasets: [
         {
-          label: "Number of Students",
+          label: "Number of Infractions",
           data: numStudents,
           backgroundColor: "rgba(54, 162, 235, 0.6)", // Blue color
           borderColor: "rgba(54, 162, 235, 1)",
