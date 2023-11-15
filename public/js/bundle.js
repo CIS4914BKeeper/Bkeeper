@@ -12468,7 +12468,7 @@ if (graphform) {
           data = {
             labels: classes,
             datasets: [{
-              label: "Number of Students",
+              label: "Number of Infractions",
               data: numStudents,
               backgroundColor: "rgba(54, 162, 235, 0.6)",
               // Blue color
@@ -12530,7 +12530,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50252" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49926" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
