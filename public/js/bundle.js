@@ -12389,14 +12389,14 @@ var graphform = document.querySelector('#myChart');
 if (metricIntakeForm) {
   metricIntakeForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    var studentID = document.getElementById('student_id').value;
+    var studentId = document.getElementById('student_id').value;
     var studentName = document.getElementById('student_name').value;
     var infractionType = document.getElementById('infType').value;
     var Bgrade = document.getElementById('bgrade').value;
     var classID = document.getElementById('classID').value;
     var description = document.getElementById('Description').value;
     var metrics = {
-      studentID: studentID,
+      studentId: studentId,
       studentName: studentName,
       infractionType: infractionType,
       Bgrade: Bgrade,
@@ -12530,7 +12530,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49926" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55368" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

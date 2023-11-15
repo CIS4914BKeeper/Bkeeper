@@ -56,7 +56,7 @@ exports.getMetricData = async (req, res) => {
 
   try {
     // Query metrics and increment counts based on the class
-    const metrics = await Metric.find({ studentID: { $in: user.studentId } });
+    const metrics = await Metric.find({ studentId: { $in: user.studentId } });
 
     metrics.forEach(metric => {
       const className = metric.classID;

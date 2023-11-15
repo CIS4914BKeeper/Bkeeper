@@ -324,7 +324,7 @@ exports.restrictTo = (...roles) => {
 
 exports.metricsIntake = catchAsync(async (req, res, next) => {
   const newMetric = await Metrics.create({
-    studentID: req.body.studentID,
+    studentId: req.body.studentId,
     studentName: req.body.studentName,
     infractionType: req.body.infractionType,
     Bgrade: req.body.Bgrade,

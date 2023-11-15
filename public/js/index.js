@@ -21,14 +21,14 @@ if (metricIntakeForm) {
   metricIntakeForm.addEventListener('submit', e => {
     e.preventDefault();
 
-    const studentID = document.getElementById('student_id').value;
+    const studentId = document.getElementById('student_id').value;
     const studentName = document.getElementById('student_name').value;
     const infractionType = document.getElementById('infType').value;
     const Bgrade = document.getElementById('bgrade').value;
     const classID = document.getElementById('classID').value;
     const description = document.getElementById('Description').value;
 
-    const metrics = { studentID, studentName, infractionType, Bgrade, classID, description };
+    const metrics = { studentId, studentName, infractionType, Bgrade, classID, description };
 
     metricIntake(metrics);
   });

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Class = require('./class');
 
 const metricSchema = new mongoose.Schema({
-  studentID: {
+  studentId: {
     type: String, // or Number if student IDs are numeric
     required: true,
   },
