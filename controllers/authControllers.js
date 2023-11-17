@@ -1,15 +1,19 @@
-const crypto = require('crypto');
-const jwt = require('jsonwebtoken');
-const { promisify } = require('util');
-const User = require('../models/userModel');
+const crypto = require("crypto");
+const jwt = require("jsonwebtoken");
+const { promisify } = require("util");
+const User = require("../models/userModel");
 const Metrics = require("../models/metricsModel");
-const catchAsync = require('../utils/catchAsync');
-const AppError = require('../utils/appError');
-const Email = require('../utils/email');
+const catchAsync = require("../utils/catchAsync");
+const AppError = require("../utils/appError");
+const Email = require("../utils/email");
 
-const signToken = (id) => jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN, });
+const signToken = (id) =>
+  jwt.sign({ id }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN,
+  });
 
-const getHashedToken = (token) => crypto.createHash('sha256').update(token).digest('hex');
+const getHashedToken = (token) =>
+  crypto.createHash("sha256").update(token).digest("hex");
 
 const createSendToken = (user, statusCode, res) => {
   const token = signToken(user._id);
@@ -20,12 +24,12 @@ const createSendToken = (user, statusCode, res) => {
     httpOnly: true,
   };
 
-  res.cookie('jwt', token, cookieOptions);
+  res.cookie("jwt", token, cookieOptions);
 
   user.password = undefined;
 
   res.status(statusCode).json({
-    status: 'success',
+    status: "success",
     token,
     data: {
       user,
@@ -42,7 +46,7 @@ exports.setPassword = catchAsync(async (req, res, next) => {
   });
 
   if (!user) {
-    return next(new AppError('Token is invalid or has expired'), 400);
+    return next(new AppError("Token is invalid or has expired"), 400);
   }
 
   user.password = req.body.password;
@@ -56,7 +60,7 @@ exports.setPassword = catchAsync(async (req, res, next) => {
   user.password = undefined;
 
   res.status(200).json({
-    status: 'success',
+    status: "success",
     data: {
       user,
     },
@@ -78,23 +82,19 @@ exports.signupRequest = catchAsync(async (req, res, next) => {
 
   await newUser.save();
 
-  const url = `${req.protocol}://${req.get(
-    'host',
-  )}/api/v1/users/signup/${signUpToken}`;
-
   try {
     //reject url
     // await new Email(newUser, url).sendAdmin();
 
     // return next();
     res.status(200).json({
-      status: 'success',
+      status: "success",
       signUpToken,
-      message: 'User signup request sent for admin review.',
+      message: "User signup request sent for admin review.",
     });
   } catch (err) {
     return next(
-      new AppError('There was an error sending the email. Tey again later!'),
+      new AppError("There was an error sending the email. Tey again later!"),
       500,
     );
   }
@@ -109,21 +109,21 @@ exports.approveUser = catchAsync(async (req, res, next) => {
   });
 
   if (!user) {
-    return next(new AppError('Token is invalid or has expired'), 400);
+    return next(new AppError("Token is invalid or has expired"), 400);
   }
 
   // Update user status to 'approved'
-  user.status = 'approved';
+  user.status = "approved";
   await user.save();
 
-  const signupURL = `${req.protocol}://${req.get('host')}/setPassword/${req.params.token}`;
-
+  const signupURL = `${req.protocol}://${req.get("host")}/setPassword/${req.params.token
+    }`;
   await new Email(user, signupURL).sendApprove();
 
   res.status(200).json({
-    status: 'success',
+    status: "success",
     signupURL,
-    message: 'User approved successfully. Email sent for password setup.',
+    message: "User approved successfully. Email sent for password setup.",
   });
 });
 
@@ -135,19 +135,18 @@ exports.rejectUser = catchAsync(async (req, res, next) => {
     tokenExpires: { $gt: Date.now() },
   });
 
-
   if (!user) {
-    return next(new AppError('Token is invalid or has expired'), 400);
+    return next(new AppError("Token is invalid or has expired"), 400);
   }
 
-  const signupURL = `${req.protocol}://${req.get('host')}/signup`;
+  const signupURL = `${req.protocol}://${req.get("host")}/signup`;
 
   await new Email(user, signupURL).sendReject();
 
   res.status(200).json({
-    status: 'success',
+    status: "success",
     signupURL,
-    message: 'User rejected successfully. Email sent to the user.',
+    message: "User rejected successfully. Email sent to the user.",
   });
 });
 
@@ -155,42 +154,40 @@ exports.login = catchAsync(async (req, res, next) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
-    return next(new AppError('Please provide email and password!', 400));
+    return next(new AppError("Please provide email and password!", 400));
   }
 
-  const user = await User.findOne({ email }).select('+password');
+  const user = await User.findOne({ email }).select("+password");
 
   if (!user || !(await user.correctPassword(password, user.password))) {
-    return next(new AppError('Incorrect email or password', 401));
+    return next(new AppError("Incorrect email or password", 401));
   }
 
   createSendToken(user, 200, res);
-
 });
 
 exports.logout = (req, res) => {
-  res.cookie('jwt', 'loggedout', {
+  res.cookie("jwt", "loggedout", {
     expires: new Date(Date.now() + 10 * 1000),
     httpOnly: true,
   });
-  res.status(200).json({ status: 'success' });
+  res.status(200).json({ status: "success" });
 };
-
 
 // USE LATER FOR ACCESSING THEIR DATA
 exports.protect = catchAsync(async (req, res, next) => {
   let token;
   if (
     req.headers.authorization &&
-    req.headers.authorization.startsWith('Bearer')
+    req.headers.authorization.startsWith("Bearer")
   ) {
-    token = req.headers.authorization.split(' ')[1];
+    token = req.headers.authorization.split(" ")[1];
   } else if (req.cookies.jwt) {
     token = req.cookies.jwt;
   }
   if (!token) {
     return next(
-      new AppError('You are not logged in! Please login to get access.', 401),
+      new AppError("You are not logged in! Please login to get access.", 401),
     );
   }
 
@@ -201,7 +198,7 @@ exports.protect = catchAsync(async (req, res, next) => {
   if (!currentUser) {
     return next(
       new AppError(
-        'The user belonging to this token does no longer exist.',
+        "The user belonging to this token does no longer exist.",
         401,
       ),
     );
@@ -209,7 +206,7 @@ exports.protect = catchAsync(async (req, res, next) => {
 
   if (currentUser.changedPasswordAfter(decoded.iat)) {
     return next(
-      new AppError('User recently changed password! Please log in again', 401),
+      new AppError("User recently changed password! Please log in again", 401),
     );
   }
 
@@ -249,7 +246,7 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
   const user = await User.findOne({ email: req.body.email });
 
   if (!user) {
-    return next(new AppError('There is no user with that email address', 404));
+    return next(new AppError("There is no user with that email address", 404));
   }
 
   const resetToken = user.generateToken();
@@ -257,21 +254,22 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
 
   const resetURL = `${req.protocol}://${req.get(
-    'host',
+    "host",
   )}/api/v1/users/resetPassword/${resetToken}`;
 
   const message = `Forgot your password? Submit a PATCH request with your new password and passwordConfrim it ${resetURL}.\nIf you didn't forget your password, please ignore this email!`;
 
   try {
+    // eslint-disable-next-line no-undef
     await sendEmail({
       email: user.email,
-      subject: 'Your password reset token (valid for 10 min)',
+      subject: "Your password reset token (valid for 10 min)",
       message,
     });
 
     res.status(200).json({
-      status: 'success',
-      message: 'Token sent to email',
+      status: "success",
+      message: "Token sent to email",
     });
   } catch (err) {
     user.passwordResetToken = undefined;
@@ -279,7 +277,7 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
     await user.save({ validateBeforeSave: false });
 
     return next(
-      new AppError('There was an error sending the email. Tey again later!'),
+      new AppError("There was an error sending the email. Tey again later!"),
       500,
     );
   }
@@ -294,7 +292,7 @@ exports.resetPassword = catchAsync(async (req, res, next) => {
   });
 
   if (!user) {
-    return next(new AppError('Token is invalid or has expired'), 400);
+    return next(new AppError("Token is invalid or has expired"), 400);
   }
 
   user.password = req.body.password;
@@ -305,21 +303,17 @@ exports.resetPassword = catchAsync(async (req, res, next) => {
 
   const token = signToken(user._id);
   res.status(200).json({
-    status: 'success',
+    status: "success",
     token,
   });
 });
 
-exports.restrictTo = (...roles) => {
-  return (req, res, next) => {
-    if (!roles.includes(req.user.role)) {
-      return next(
-        new AppError('You do not have permission', 403),
-      );
-    }
+// eslint-disable-next-line prettier/prettier
+exports.restrictTo = (...roles) => (req, res, next) => {
+  if (!roles.includes(req.user.role))
+    return next(new AppError("You do not have permission", 403));
 
-    next();
-  };
+  next();
 };
 
 exports.metricsIntake = catchAsync(async (req, res, next) => {
@@ -334,8 +328,7 @@ exports.metricsIntake = catchAsync(async (req, res, next) => {
 
   await newMetric.save();
   res.status(200).json({
-    status: 'success',
+    status: "success",
     data: newMetric,
   });
-
 });

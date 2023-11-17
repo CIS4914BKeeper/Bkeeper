@@ -1,36 +1,36 @@
-const crypto = require('crypto');
-const mongoose = require('mongoose');
-const validator = require('validator');
-const bcrypt = require('bcryptjs');
+const crypto = require("crypto");
+const mongoose = require("mongoose");
+const validator = require("validator");
+const bcrypt = require("bcryptjs");
 
 const userSchema = new mongoose.Schema({
   school: {
     type: String,
-    required: [true, 'Please provide your school'],
+    required: [true, "Please provide your school"],
   },
   email: {
     type: String,
-    required: [true, 'Please provide your email'],
+    required: [true, "Please provide your email"],
     unique: true,
     lowercase: true,
-    validate: [validator.isEmail, 'Please provide a valid email'],
+    validate: [validator.isEmail, "Please provide a valid email"],
   },
   studentId: {
     type: Number,
-    required: [true, 'Please provide your studentID'],
+    required: [true, "Please provide your studentID"],
   },
   name: {
     type: String,
-    required: [true, 'Plesae tell us your name!'],
+    required: [true, "Plesae tell us your name!"],
     lowercase: true,
   },
   phoneNumber: {
     type: String,
     validate: {
       validator: function (value) {
-        return validator.isMobilePhone(value, ['en-US']);
+        return validator.isMobilePhone(value, ["en-US"]);
       },
-      message: 'Please provide a valid phone number!',
+      message: "Please provide a valid phone number!",
     },
   },
   password: {
@@ -44,15 +44,15 @@ const userSchema = new mongoose.Schema({
   },
   class: {
     type: [String],
-    required: [true, 'Please provide your class.'],
+    required: [true, "Please provide your class."],
   },
   passwordChangedAt: Date,
   token: String,
   tokenExpires: Date,
   status: {
     type: String,
-    enum: ['pending', 'approved'],
-    default: 'pending',
+    enum: ["pending", "approved"],
+    default: "pending",
   },
   active: {
     type: Boolean,
@@ -61,23 +61,22 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['admin', 'teacher', 'student'],
-    default: 'student',
+    enum: ["admin", "teacher", "student"],
+    default: "student",
   },
-
 });
 
-userSchema.virtual('metrics', {
-  ref: 'Metric',
-  foreignField: 'user',
-  localField: '_id',
+userSchema.virtual("metrics", {
+  ref: "Metric",
+  foreignField: "user",
+  localField: "_id",
 });
 
-userSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
+userSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
 
   if (this.password !== this.passwordConfirm) {
-    return next(new Error('Passwords do not match'));
+    return next(new Error("Passwords do not match"));
   }
 
   this.password = await bcrypt.hash(this.password, 12);
@@ -86,8 +85,8 @@ userSchema.pre('save', async function (next) {
   next();
 });
 
-userSchema.pre('save', function (next) {
-  if (!this.isModified('password') || this.isNew) return next();
+userSchema.pre("save", function (next) {
+  if (!this.isModified("password") || this.isNew) return next();
 
   this.passwordChangedAt = Date.now() - 1000;
   next();
@@ -119,14 +118,14 @@ userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
 };
 
 userSchema.methods.generateToken = function () {
-  const token = crypto.randomBytes(32).toString('hex');
+  const token = crypto.randomBytes(32).toString("hex");
 
-  this.token = crypto.createHash('sha256').update(token).digest('hex');
+  this.token = crypto.createHash("sha256").update(token).digest("hex");
   this.tokenExpires = Date.now() + 10 * 60 * 1000;
 
   return token;
 };
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;

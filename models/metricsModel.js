@@ -1,5 +1,4 @@
-const mongoose = require('mongoose');
-const Class = require('./class');
+const mongoose = require("mongoose");
 
 const metricSchema = new mongoose.Schema({
   studentId: {
@@ -18,12 +17,8 @@ const metricSchema = new mongoose.Schema({
     type: Number, // or String if grades are represented as text
     required: true,
   },
-  classID: {
+  classId: {
     type: Number, // 4 digits
-    required: true,
-  },
-  classID: {
-    type: String,
     required: true,
   },
   description: {
@@ -43,6 +38,6 @@ const metricSchema = new mongoose.Schema({
   // },
 });
 
-const Metric = mongoose.model('Metric', metricSchema);
+const Metric = mongoose.model("Metric", metricSchema);
 
 module.exports = Metric;
