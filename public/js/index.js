@@ -17,9 +17,10 @@ const graphform = document.querySelector('#myChart');
 if (metricIntakeForm) {
   metricIntakeForm.addEventListener('submit', e => {
     e.preventDefault();
-
-    const studentId = document.getElementById('student_id').value;
-    const studentName = document.getElementById('student_name').value;
+    const studentNameAndId = document.getElementById('student_name_id').value;
+    console.log(studentNameAndId);
+    const studentId = studentNameAndId[0];
+    const studentName = studentNameAndId[1];
     const infractionType = document.getElementById('infType').value;
     const Bgrade = document.getElementById('bgrade').value;
     const classID = document.getElementById('classID').value;

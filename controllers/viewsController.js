@@ -40,8 +40,12 @@ exports.getDashboard = async (req, res) => {
 };
 
 // Metrics intake
-exports.metricsIntake = (req, res) => {
-  res.render("metricsIntake");
+exports.metricsIntake = async (req, res) => {
+  const students = await User.find({ role: { $in: "student" } }).lean();
+
+  res.render("metricsIntake", {
+    students,
+  });
 };
 
 exports.getMetricData = async (req, res) => {
