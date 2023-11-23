@@ -5,9 +5,6 @@ import { login } from './login';
 import { logout } from './login';
 
 import { metricIntake } from './metrics';
-import { graph } from './graph';
-
-
 const loginForm = document.querySelector('#loginForm');
 const passwordForm = document.querySelector('#passwordForm');
 const signupRequestForm = document.querySelector('#requestForm');

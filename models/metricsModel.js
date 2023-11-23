@@ -17,8 +17,8 @@ const metricSchema = new mongoose.Schema({
     type: Number, // or String if grades are represented as text
     required: true,
   },
-  classId: {
-    type: Number, // 4 digits
+  classID: {
+    type: String, // 4 digits
     required: true,
   },
   description: {
