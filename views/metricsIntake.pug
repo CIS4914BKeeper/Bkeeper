@@ -15,7 +15,7 @@ block content
             select#student_name_id.form-control(name='student_name_id' required='')
               option(value='' selected='' disabled='') Select a Student
               each student in students
-                option(value=`${student.name}(${student.studentId})`) #{student.name}(#{student.studentId})
+                option(value=`${student.studentId} ${student.name}`) #{student.name}(#{student.studentId})
           .mb-3
             label.form-label(for='infType') Infraction Type
             select#infType.form-control(name='infType' required='')

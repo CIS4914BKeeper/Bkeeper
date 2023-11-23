@@ -17,8 +17,7 @@ const graphform = document.querySelector('#myChart');
 if (metricIntakeForm) {
   metricIntakeForm.addEventListener('submit', e => {
     e.preventDefault();
-    const studentNameAndId = document.getElementById('student_name_id').value;
-    console.log(studentNameAndId);
+    const studentNameAndId = document.getElementById('student_name_id').value.split(' ');
     const studentId = studentNameAndId[0];
     const studentName = studentNameAndId[1];
     const infractionType = document.getElementById('infType').value;

@@ -12368,8 +12368,8 @@ var graphform = document.querySelector('#myChart');
 if (metricIntakeForm) {
   metricIntakeForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    var studentNameAndId = document.getElementById('student_name_id').value;
-    console.log(studentNameAndId);
+    var studentNameAndId = document.getElementById('student_name_id').value.split(' ');
+    console.log();
     var studentId = studentNameAndId[0];
     var studentName = studentNameAndId[1];
     var infractionType = document.getElementById('infType').value;
@@ -12511,7 +12511,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56566" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59458" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
