@@ -1,0 +1,605 @@
+[
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_4",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Distracted",
+    "Bgrade": 5,
+    "classID": "English102",
+    "description": "Consistently distracted during the lecture."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_401",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Misbehaving",
+    "Bgrade": 5,
+    "classID": "English102",
+    "description": "Consistently misbehaving during the lecture."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_5",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Misbehaving",
+    "Bgrade": 7,
+    "classID": "PhysicalEd101",
+    "description": "Engaged in disruptive behavior during physical education class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_6",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Other",
+    "Bgrade": 6,
+    "classID": "Art103",
+    "description": "Violated school policies in the art class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_7",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Late",
+    "Bgrade": 9,
+    "classID": "Music103",
+    "description": "Arrived late to music class but actively participated."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_8",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Skipping",
+    "Bgrade": 4,
+    "classID": "History102",
+    "description": "Skipped history class without proper explanation."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_9",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Disturbance",
+    "Bgrade": 8,
+    "classID": "Geography101",
+    "description": "Created a disturbance during a geography class group activity."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_10",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Distracted",
+    "Bgrade": 6,
+    "classID": "PoliticalScience101",
+    "description": "Frequently distracted during a political science lecture."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_11",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Misbehaving",
+    "Bgrade": 7,
+    "classID": "English102",
+    "description": "Engaged in disruptive behavior during an English class discussion."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_12",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Other",
+    "Bgrade": 5,
+    "classID": "PhysicalEd101",
+    "description": "Violated school policies in the physical education class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188_infraction_13",
+    "studentId": "33445566",
+    "studentName": "Lourdes Browning",
+    "infractionType": "Late",
+    "Bgrade": 8,
+    "classID": "Art103",
+    "description": "Arrived late to art class but actively participated."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189_infraction_8",
+    "studentId": "66778899",
+    "studentName": "David White",
+    "infractionType": "Disturbance",
+    "Bgrade": 6,
+    "classID": "Psychology101",
+    "description": "Engages in disruptive behavior during psychology class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189_infraction_90",
+    "studentId": "66778899",
+    "studentName": "David White",
+    "infractionType": "Disturbance",
+    "Bgrade": 7,
+    "classID": "Sociology101",
+    "description": "Engages in disruptive behavior during sociology class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189_infraction_9",
+    "studentId": "66778899",
+    "studentName": "David White",
+    "infractionType": "Disturbance",
+    "Bgrade": 7,
+    "classID": "Anthropology101",
+    "description": "Engages in disruptive behavior during anthropology class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189_infraction_10",
+    "studentId": "66778899",
+    "studentName": "David White",
+    "infractionType": "Misbehaving",
+    "Bgrade": 6,
+    "classID": "Anthropology101",
+    "description": "Displays inappropriate behavior in anthropology class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189_infraction_11",
+    "studentId": "66778899",
+    "studentName": "David White",
+    "infractionType": "Skipping",
+    "Bgrade": 8,
+    "classID": "English104",
+    "description": "Frequently skips English class without valid reasons."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189_infraction_12",
+    "studentId": "66778899",
+    "studentName": "David White",
+    "infractionType": "Distracted",
+    "Bgrade": 5,
+    "classID": "Philosophy101",
+    "description": "Consistently distracted during philosophy lectures."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189_infraction_13",
+    "studentId": "66778899",
+    "studentName": "David White",
+    "infractionType": "Other",
+    "Bgrade": 9,
+    "classID": "Art105",
+    "description": "Engages in other disruptive behavior during art class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189_infraction_14",
+    "studentId": "66778899",
+    "studentName": "David White",
+    "infractionType": "Other",
+    "Bgrade": 7,
+    "classID": "Music105",
+    "description": "Engages in other disruptive behavior during music class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190_infraction_1",
+    "studentId": "00112233",
+    "studentName": "Isabella Roberts",
+    "infractionType": "Late",
+    "Bgrade": 7,
+    "classID": "Journalism101",
+    "description": "Frequently arrives late to journalism class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190_infraction_2",
+    "studentId": "00112233",
+    "studentName": "Isabella Roberts",
+    "infractionType": "Skipping",
+    "Bgrade": 6,
+    "classID": "MediaStudies101",
+    "description": "Skips media studies class without valid reasons."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190_infraction_3",
+    "studentId": "00112233",
+    "studentName": "Isabella Roberts",
+    "infractionType": "Disturbance",
+    "Bgrade": 8,
+    "classID": "PublicRelations101",
+    "description": "Engages in disruptive behavior during public relations class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190_infraction_30",
+    "studentId": "00112233",
+    "studentName": "Isabella Roberts",
+    "infractionType": "Disturbance",
+    "Bgrade": 8,
+    "classID": "English106",
+    "description": "Engages in disruptive behavior during English class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190_infraction_4",
+    "studentId": "00112233",
+    "studentName": "Isabella Roberts",
+    "infractionType": "Distracted",
+    "Bgrade": 5,
+    "classID": "English106",
+    "description": "Consistently distracted during English class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190_infraction_5",
+    "studentId": "00112233",
+    "studentName": "Isabella Roberts",
+    "infractionType": "Misbehaving",
+    "Bgrade": 7,
+    "classID": "CommunicationStudies101",
+    "description": "Displays inappropriate behavior in communication studies class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190_infraction_6",
+    "studentId": "00112233",
+    "studentName": "Isabella Roberts",
+    "infractionType": "Other",
+    "Bgrade": 9,
+    "classID": "Art107",
+    "description": "Engages in other disruptive behavior during art class."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190_infraction_7",
+    "studentId": "00112233",
+    "studentName": "Isabella Roberts",
+    "infractionType": "Other",
+    "Bgrade": 8,
+    "classID": "Music107",
+    "description": "Engages in other disruptive behavior during music class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196_infraction_1",
+    "studentId": "33445567",
+    "studentName": "Emma Walker",
+    "infractionType": "Late",
+    "Bgrade": 7,
+    "classID": "Photography101",
+    "description": "Frequently arrives late to photography class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196_infraction_2",
+    "studentId": "33445567",
+    "studentName": "Emma Walker",
+    "infractionType": "Skipping",
+    "Bgrade": 6,
+    "classID": "DigitalArt101",
+    "description": "Skips digital art class without valid reasons."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196_infraction_3",
+    "studentId": "33445567",
+    "studentName": "Emma Walker",
+    "infractionType": "Disturbance",
+    "Bgrade": 8,
+    "classID": "GraphicDesign101",
+    "description": "Engages in disruptive behavior during graphic design class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196_infraction_31",
+    "studentId": "33445567",
+    "studentName": "Emma Walker",
+    "infractionType": "Disturbance",
+    "Bgrade": 8,
+    "classID": "English116",
+    "description": "Engages in disruptive behavior during Egnlish class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196_infraction_4",
+    "studentId": "33445567",
+    "studentName": "Emma Walker",
+    "infractionType": "Distracted",
+    "Bgrade": 5,
+    "classID": "English116",
+    "description": "Consistently distracted during English class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196_infraction_5",
+    "studentId": "33445567",
+    "studentName": "Emma Walker",
+    "infractionType": "Misbehaving",
+    "Bgrade": 7,
+    "classID": "CommunicationStudies102",
+    "description": "Displays inappropriate behavior in communication studies class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196_infraction_6",
+    "studentId": "33445567",
+    "studentName": "Emma Walker",
+    "infractionType": "Other",
+    "Bgrade": 9,
+    "classID": "Art117",
+    "description": "Engages in other disruptive behavior during art class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196_infraction_7",
+    "studentId": "33445567",
+    "studentName": "Emma Walker",
+    "infractionType": "Other",
+    "Bgrade": 8,
+    "classID": "Music117",
+    "description": "Engages in other disruptive behavior during music class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072_infraction_1",
+    "studentId": "55667790",
+    "studentName": "Oliver Martin",
+    "infractionType": "Late",
+    "Bgrade": 6,
+    "classID": "PhysicalTherapy101",
+    "description": "Frequently arrives late to physical therapy class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072_infraction_12",
+    "studentId": "55667790",
+    "studentName": "Oliver Martin",
+    "infractionType": "Late",
+    "Bgrade": 6,
+    "classID": "OccupationalTherapy101",
+    "description": "Frequently arrives late to occupational therapy class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072_infraction_2",
+    "studentId": "55667790",
+    "studentName": "Oliver Martin",
+    "infractionType": "Skipping",
+    "Bgrade": 7,
+    "classID": "OccupationalTherapy101",
+    "description": "Skips occupational therapy class without valid reasons."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072_infraction_3",
+    "studentId": "55667790",
+    "studentName": "Oliver Martin",
+    "infractionType": "Disturbance",
+    "Bgrade": 5,
+    "classID": "SportsMedicine101",
+    "description": "Engages in disruptive behavior during sports medicine class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072_infraction_4",
+    "studentId": "55667790",
+    "studentName": "Oliver Martin",
+    "infractionType": "Distracted",
+    "Bgrade": 8,
+    "classID": "English118",
+    "description": "Consistently distracted during English class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072_infraction_5",
+    "studentId": "55667790",
+    "studentName": "Oliver Martin",
+    "infractionType": "Misbehaving",
+    "Bgrade": 6,
+    "classID": "Biology102",
+    "description": "Displays inappropriate behavior in biology class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072_infraction_6",
+    "studentId": "55667790",
+    "studentName": "Oliver Martin",
+    "infractionType": "Other",
+    "Bgrade": 9,
+    "classID": "Art119",
+    "description": "Engages in other disruptive behavior during art class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072_infraction_7",
+    "studentId": "55667790",
+    "studentName": "Oliver Martin",
+    "infractionType": "Other",
+    "Bgrade": 7,
+    "classID": "Music119",
+    "description": "Engages in other disruptive behavior during music class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197_infraction_1",
+    "studentId": "66778890",
+    "studentName": "Isabella Taylor",
+    "infractionType": "Late",
+    "Bgrade": 8,
+    "classID": "FashionDesign101",
+    "description": "Frequently arrives late to fashion design class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197_infraction_2",
+    "studentId": "66778890",
+    "studentName": "Isabella Taylor",
+    "infractionType": "Skipping",
+    "Bgrade": 7,
+    "classID": "TextileDesign101",
+    "description": "Skips textile design class without valid reasons."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197_infraction_23",
+    "studentId": "66778890",
+    "studentName": "Isabella Taylor",
+    "infractionType": "Skipping",
+    "Bgrade": 7,
+    "classID": "FashionMerchandising101",
+    "description": "Skips fashion merchandising design class without valid reasons."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197_infraction_3",
+    "studentId": "66778890",
+    "studentName": "Isabella Taylor",
+    "infractionType": "Disturbance",
+    "Bgrade": 6,
+    "classID": "FashionMerchandising101",
+    "description": "Engages in disruptive behavior during fashion merchandising class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197_infraction_4",
+    "studentId": "66778890",
+    "studentName": "Isabella Taylor",
+    "infractionType": "Distracted",
+    "Bgrade": 9,
+    "classID": "English119",
+    "description": "Consistently distracted during English class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197_infraction_5",
+    "studentId": "66778890",
+    "studentName": "Isabella Taylor",
+    "infractionType": "Misbehaving",
+    "Bgrade": 7,
+    "classID": "Marketing102",
+    "description": "Displays inappropriate behavior in marketing class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197_infraction_6",
+    "studentId": "66778890",
+    "studentName": "Isabella Taylor",
+    "infractionType": "Other",
+    "Bgrade": 9,
+    "classID": "Art120",
+    "description": "Engages in other disruptive behavior during art class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197_infraction_7",
+    "studentId": "66778890",
+    "studentName": "Isabella Taylor",
+    "infractionType": "Other",
+    "Bgrade": 8,
+    "classID": "Music120",
+    "description": "Engages in other disruptive behavior during music class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073_infraction_1",
+    "studentId": "88990012",
+    "studentName": "Emma Davis",
+    "infractionType": "Late",
+    "Bgrade": 8,
+    "classID": "Journalism102",
+    "description": "Frequently arrives late to journalism class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073_infraction_2",
+    "studentId": "88990012",
+    "studentName": "Emma Davis",
+    "infractionType": "Skipping",
+    "Bgrade": 7,
+    "classID": "MediaStudies102",
+    "description": "Skips media studies class without valid reasons."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073_infraction_24",
+    "studentId": "88990012",
+    "studentName": "Emma Davis",
+    "infractionType": "Skipping",
+    "Bgrade": 7,
+    "classID": "PublicRelations102",
+    "description": "Skips public relations class without valid reasons."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073_infraction_3",
+    "studentId": "88990012",
+    "studentName": "Emma Davis",
+    "infractionType": "Disturbance",
+    "Bgrade": 6,
+    "classID": "PublicRelations102",
+    "description": "Engages in disruptive behavior during public relations class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073_infraction_4",
+    "studentId": "88990012",
+    "studentName": "Emma Davis",
+    "infractionType": "Distracted",
+    "Bgrade": 9,
+    "classID": "English121",
+    "description": "Consistently distracted during English class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073_infraction_5",
+    "studentId": "88990012",
+    "studentName": "Emma Davis",
+    "infractionType": "Misbehaving",
+    "Bgrade": 7,
+    "classID": "CommunicationStudies103",
+    "description": "Displays inappropriate behavior in communication studies class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073_infraction_6",
+    "studentId": "88990012",
+    "studentName": "Emma Davis",
+    "infractionType": "Other",
+    "Bgrade": 9,
+    "classID": "Art122",
+    "description": "Engages in other disruptive behavior during art class."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073_infraction_7",
+    "studentId": "88990012",
+    "studentName": "Emma Davis",
+    "infractionType": "Other",
+    "Bgrade": 8,
+    "classID": "Music122",
+    "description": "Engages in other disruptive behavior during music class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198_infraction_1",
+    "studentId": "00112234",
+    "studentName": "Oliver Davis",
+    "infractionType": "Late",
+    "Bgrade": 8,
+    "classID": "CreativeWriting102",
+    "description": "Frequently arrives late to creative writing class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198_infraction_2",
+    "studentId": "00112234",
+    "studentName": "Oliver Davis",
+    "infractionType": "Skipping",
+    "Bgrade": 7,
+    "classID": "Screenwriting101",
+    "description": "Skips screenwriting class without valid reasons."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198_infraction_3",
+    "studentId": "00112234",
+    "studentName": "Oliver Davis",
+    "infractionType": "Disturbance",
+    "Bgrade": 6,
+    "classID": "Poetry101",
+    "description": "Engages in disruptive behavior during poetry class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198_infraction_4",
+    "studentId": "00112234",
+    "studentName": "Oliver Davis",
+    "infractionType": "Distracted",
+    "Bgrade": 9,
+    "classID": "English122",
+    "description": "Consistently distracted during English class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198_infraction_5",
+    "studentId": "00112234",
+    "studentName": "Oliver Davis",
+    "infractionType": "Misbehaving",
+    "Bgrade": 7,
+    "classID": "Literature101",
+    "description": "Displays inappropriate behavior in literature class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198_infraction_6",
+    "studentId": "00112234",
+    "studentName": "Oliver Davis",
+    "infractionType": "Other",
+    "Bgrade": 9,
+    "classID": "Art123",
+    "description": "Engages in other disruptive behavior during art class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198_infraction_7",
+    "studentId": "00112234",
+    "studentName": "Oliver Davis",
+    "infractionType": "Other",
+    "Bgrade": 8,
+    "classID": "Music123",
+    "description": "Engages in other disruptive behavior during music class."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198_infraction_73",
+    "studentId": "00112234",
+    "studentName": "Oliver Davis",
+    "infractionType": "Late",
+    "Bgrade": 8,
+    "classID": "Music123",
+    "description": "Arrived late to music class but actively participated."
+  }
+]

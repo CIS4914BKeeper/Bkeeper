@@ -1,0 +1,204 @@
+[
+  {
+    "_id": "5c8a1d5b0190b214360dc065",
+    "school": "ADMIN",
+    "email": "admin@maplewoodhs.com",
+    "studentId": "11223344",
+    "name": "Alex Johnson",
+    "phoneNumber": "555-123-4567",
+    "class": [],
+    "role": "admin",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$Q0grHjH9PXc6SxivC8m12.2mZJ9BbKcgFpwSG4Y1ZEII8HJVzWeyS"
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa191",
+    "school": "Riverdale High School",
+    "email": "sophie@riverdalehs.com",
+    "studentId": "22334455",
+    "name": "Sophie Hart",
+    "phoneNumber": "555-987-6543",
+    "class": [
+      "Biology101",
+      "Chemistry101",
+      "Physics101",
+      "English101",
+      "Math102",
+      "Art102",
+      "Music102"
+    ],
+    "role": "teacher",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$tm33.M/4pfEbZF64WbFuHuVFv85v4qEhi.ik8njbud7yaoqCZpjiy"
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa188",
+    "school": "Riverdale High School",
+    "email": "lourdes@lakesidehs.com",
+    "studentId": "33445566",
+    "name": "Lourdes Browning",
+    "phoneNumber": "555-765-4321",
+    "class": [
+      "History102",
+      "Geography101",
+      "PoliticalScience101",
+      "English102",
+      "PhysicalEd101",
+      "Art103",
+      "Music103"
+    ],
+    "role": "student",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$hP1h2pnNp7wgyZNRwPsOTeZuNzWBv7vHmsR3DT/OaPSUBQT.y0S.."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa189",
+    "school": "Riverdale High School",
+    "email": "david@evergreenhs.com",
+    "studentId": "66778899",
+    "name": "David White",
+    "phoneNumber": "555-987-6543",
+    "class": [
+      "Psychology101",
+      "Sociology101",
+      "Anthropology101",
+      "English104",
+      "Philosophy101",
+      "Art105",
+      "Music105"
+    ],
+    "role": "student",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$hP1h2pnNp7wgyZNRwPsOTeZuNzWBv7vHmsR3DT/OaPSUBQT.y0S.."
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa190",
+    "school": "Riverdale High School",
+    "email": "isabella@willowbrookhs.com",
+    "studentId": "00112233",
+    "name": "Isabella Roberts",
+    "phoneNumber": "555-765-4321",
+    "class": [
+      "Journalism101",
+      "MediaStudies101",
+      "PublicRelations101",
+      "English106",
+      "CommunicationStudies101",
+      "Art107",
+      "Music107"
+    ],
+    "role": "student",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$hP1h2pnNp7wgyZNRwPsOTeZuNzWBv7vHmsR3DT/OaPSUBQT.y0S.."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa196",
+    "school": "Riverdale High School",
+    "email": "emma@sunseths.com",
+    "studentId": "33445567",
+    "name": "Emma Walker",
+    "phoneNumber": "555-789-0123",
+    "class": [
+      "Photography101",
+      "DigitalArt101",
+      "GraphicDesign101",
+      "English116",
+      "CommunicationStudies102",
+      "Art117",
+      "Music117"
+    ],
+    "role": "student",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$hP1h2pnNp7wgyZNRwPsOTeZuNzWBv7vHmsR3DT/OaPSUBQT.y0S.."
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc072",
+    "school": "Riverdale High School",
+    "email": "oliver@maplegrovehs.com",
+    "studentId": "55667790",
+    "name": "Oliver Martin",
+    "phoneNumber": "555-901-2345",
+    "class": [
+      "PhysicalTherapy101",
+      "OccupationalTherapy101",
+      "SportsMedicine101",
+      "English118",
+      "Biology102",
+      "Art119",
+      "Music119"
+    ],
+    "role": "student",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$Q0grHjH9PXc6SxivC8m12.2mZJ9BbKcgFpwSG4Y1ZEII8HJVzWeyS"
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa197",
+    "school": "Riverdale High School",
+    "email": "isabella@rosewoodhs.com",
+    "studentId": "66778890",
+    "name": "Isabella Taylor",
+    "phoneNumber": "555-012-3456",
+    "class": [
+      "FashionDesign101",
+      "TextileDesign101",
+      "FashionMerchandising101",
+      "English119",
+      "Marketing102",
+      "Art120",
+      "Music120"
+    ],
+    "role": "student",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$tm33.M/4pfEbZF64WbFuHuVFv85v4qEhi.ik8njbud7yaoqCZpjiy"
+  },
+  {
+    "_id": "5c8a1d5b0190b214360dc073",
+    "school": "Riverdale High School",
+    "email": "emma@valleyviewhs.com",
+    "studentId": "88990012",
+    "name": "Emma Davis",
+    "phoneNumber": "555-345-6789",
+    "class": [
+      "Journalism102",
+      "MediaStudies102",
+      "PublicRelations102",
+      "English121",
+      "CommunicationStudies103",
+      "Art122",
+      "Music122"
+    ],
+    "role": "student",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$hP1h2pnNp7wgyZNRwPsOTeZuNzWBv7vHmsR3DT/OaPSUBQT.y0S.."
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa198",
+    "school": "Riverdale High School",
+    "email": "oliver@woodlandhs.com",
+    "studentId": "00112234",
+    "name": "Oliver Davis",
+    "phoneNumber": "555-456-7890",
+    "class": [
+      "CreativeWriting102",
+      "Screenwriting101",
+      "Poetry101",
+      "English122",
+      "Literature101",
+      "Art123",
+      "Music123"
+    ],
+    "role": "student",
+    "status": "approved",
+    "active": true,
+    "password": "$2a$12$hP1h2pnNp7wgyZNRwPsOTeZuNzWBv7vHmsR3DT/OaPSUBQT.y0S.."
+  }
+]
