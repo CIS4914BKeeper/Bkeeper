@@ -10,6 +10,7 @@ BKeeper is a behavior intervention tool entended for school districts to impleme
 - [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
+- [References](#references)
 
 ## Project Overview
 
@@ -40,6 +41,8 @@ $ To stop the server do control C
 
 
 ## License
+
+## References
 
 This project was developed with reference to the following Udemy courses:
 
