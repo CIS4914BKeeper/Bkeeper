@@ -40,3 +40,8 @@ $ To stop the server do control C
 
 
 ## License
+
+This project was developed with reference to the following Udemy courses:
+
+- [Node.js, Express, MongoDB Bootcamp](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/) by Jonas Schmedtmann
+- [The Complete Node.js Developer Course 2](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/) by Andrew Mead, Rob Percival
